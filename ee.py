@@ -142,54 +142,7 @@ def index_to_transformation(index: int):
         return audiomentations.FrequencyMask(p=1.0)
     elif index == 3:
         return audiomentations.TimeMask(p=1.0)
-    elif index == 4:
-        return audiomentations.TimeStretch(p=1.0)
-    elif index == 5:
-        return audiomentations.PitchShift(p=1.0)
-    elif index == 6:
-        return audiomentations.Shift(p=1.0)
-    elif index == 7:
-        return audiomentations.Normalize(p=1.0)
-    elif index == 8:
-        return audiomentations.PolarityInversion(p=1.0)
-    elif index == 9:
-        return audiomentations.Gain(p=1.0)
-    elif index == 10:
-        return audiomentations.AddBackgroundNoise(sounds_path="background_noise", p=1.0)
-    elif index == 11:
-        return audiomentations.AddShortNoises(sounds_path="background_noise", p=1.0)
-    elif index == 12:
-        return audiomentations.ClippingDistortion(max_percentile_threshold=10, p=1.0)
-    elif index == 13:
-        return audiomentations.Clip(p=1.0)
-    elif index == 14:
-        return audiomentations.HighPassFilter(p=1.0)
-    elif index == 15:
-        return audiomentations.LowPassFilter(p=1.0)
-    elif index == 16:
-        return audiomentations.BandPassFilter(p=1.0)
-    elif index == 17:
-        return audiomentations.Reverse(p=1.0)
-    elif index == 18:
-        return audiomentations.BandStopFilter(p=1.0)
-    elif index == 19:
-        return audiomentations.PeakingFilter(p=1.0)
-    elif index == 20:
-        return audiomentations.LowShelfFilter(p=1.0)
-    elif index == 21:
-        return audiomentations.HighShelfFilter(p=1.0)
-    elif index == 22:
-        return audiomentations.GainTransition(p=1.0)
-    elif index == 23:
-        return audiomentations.RoomSimulator(p=1.0)
-    elif index == 24:
-        return audiomentations.Padding(p=1.0)
-    elif index == 25:
-        return audiomentations.SevenBandParametricEQ(p=1.0)
-    elif index == 26:
-        return audiomentations.AirAbsorption(p=1.0)
-    elif index == 27:
-        return audiomentations.Limiter(p=1.0)
+    
 
 
 def action(file_uploader, selected_provided_file, transformations):
